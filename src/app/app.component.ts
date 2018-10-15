@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'singleton';
+  state = 0;
+
+  increase() {
+    console.log('increased to: ', this.state );
+  }
+
+  decrease() {
+    console.log('decreased to: ', this.state);
+  }
 }
